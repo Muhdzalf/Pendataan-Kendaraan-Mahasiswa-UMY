@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE53E450-1285-4112-BA6C-889121314FA3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PABD_TugasAkhir</RootNamespace>
+    <AssemblyName>PABD_TugasAkhir</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adm_AkunMhs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adm_AkunMhs.Designer.cs">
+      <DependentUpon>adm_AkunMhs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adm_kendaraan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adm_kendaraan.Designer.cs">
+      <DependentUpon>Adm_kendaraan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataKendaraan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataKendaraan.Designer.cs">
+      <DependentUpon>DataKendaraan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KendaraanDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KendaraanDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KendMahasiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KendMahasiswa.Designer.cs">
+      <DependentUpon>KendMahasiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Adm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Adm.Designer.cs">
+      <DependentUpon>Login_Adm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageAwal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageAwal.Designer.cs">
+      <DependentUpon>PageAwal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Mhs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Mhs.Designer.cs">
+      <DependentUpon>Login_Mhs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageMhs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageMhs.Designer.cs">
+      <DependentUpon>PageMhs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adm_AkunMhs.resx">
+      <DependentUpon>adm_AkunMhs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adm_kendaraan.resx">
+      <DependentUpon>Adm_kendaraan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataKendaraan.resx">
+      <DependentUpon>DataKendaraan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KendMahasiswa.resx">
+      <DependentUpon>KendMahasiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Adm.resx">
+      <DependentUpon>Login_Adm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageAwal.resx">
+      <DependentUpon>PageAwal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Mhs.resx">
+      <DependentUpon>Login_Mhs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageMhs.resx">
+      <DependentUpon>PageMhs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="KendaraanDBDataSet.xsc">
+      <DependentUpon>KendaraanDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KendaraanDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KendaraanDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KendaraanDBDataSet.xss">
+      <DependentUpon>KendaraanDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
